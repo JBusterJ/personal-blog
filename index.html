@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Personal Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <script>
+        function changeImg(){
+            document.getElementById("hovereffect2").setAttribute('src', 'https://i.ibb.co/Lrf7Lyz/image.jpg');  
+        }
+        function revertImg(){
+            document.getElementById("hovereffect2").setAttribute('src', 'https://i.ibb.co/8XDqVWY/image-1.png');
+        }
+        function scrollDown(){
+            $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+            });
+        }
+        function openMailClient(){
+            var subject = "A mail from your website";
+            var body = "enter your message here";
+            window.open('mailto:pythonprojects747@gmail.com?subject=subject&body=body');
+        }
+    </script>
+    <body>
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+            <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> </button> <p class="coolText">J</p> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#coding">Coding</a></li>
+                    <li><a href="#cricket">Cricket</a></li>
+                    <li><a href="#space">Space</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="bg1">
+            <h1 class="display-2" style="font-size: 50px;">Personal Blog</h1>
+            <p>Hello, I am J</p>
+            <button class="coolButton" onclick="scrollDown()">Click Me for more info</button>
+        </div>
+        <!-- <button class="btn btn-info">Hello</button> -->
+        <section id="coding">
+            <h1 class="coolText"><strong>Coding</strong></h1>
+            <div class="container">
+                <div id="#blurredBg"></div>
+                <div class="one">
+                    <p>I like coding because I find it fun</p>
+                    <p>I started coding about 3-4 years ago, <br> starting of by coding in HTML, CSS and Javascript</p>
+                    <p>Now, I do a variety of coding languages, <br> ranging from HTML to C#, Javascript to Python</p>
+                    <p>Here are a few of my projects: </p>
+                    <p>Hover over an image to view a tooltip with a small description!</p>
+                </div>
+                <div class="two">
+                    <img src="https://img.itch.zone/aW1hZ2UvOTU1NDQzLzU0MTY4MzQuanBn/original/rJJikt.jpg" alt="" class="image" data-toggle="tooltip" title="A fully functional Minecraft 3D clone made with C#" onclick="window.open('https://jbuster.itch.io/minecraft-clone-project', '_blank')">
+                    <img src="https://i.ibb.co/n8bn24G/image.png" alt="" class="image" data-toggle="tooltip" title="A Python RAT (remote access tool)/backdoor">
+                </div>
+                <div class="three">
+                    <img src="https://i.ibb.co/8XDqVWY/image-1.png" alt="" class="image" id="hovereffect2" onmouseover="changeImg()" onmouseout="revertImg()" data-toggle="tooltip" title="An advanced Python Keylogger capable of detecting keystrokes, mic recording, system info">
+                    <img src="https://marketingweek.imgix.net/content/uploads/2017/05/12103909/Coding-body-image-.jpg?auto=compress,format&q=60&w=750&h=460" alt="" class="image" id="movedBack" data-toggle="tooltip" title="Secret Project ;)">
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="aboutMe">
+            <p id="coolText">Hey, I'm <strong class="coolText"> J</strong></p>
+            <p>I live in <strong class="coolText">Australia</strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16202849.695033856!2d126.09720073817861!3d-26.62095151148172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sau!4v1617764274344!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <br><br>
+        </section>
+        <section id="contact">
+            <h1>Ways to contact me: </h1>
+            <div class="one1">
+                <img src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-new-icon.ico" style="width: 140px; margin-left: 31px;"><br>
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png" style="width: 200px">
+            </div>
+            <div class="two1">
+                <p>Email: pythonprojects747@gmail.com (not too active on this email)</p><button class="coolButton" onclick="location.href = 'test.html'">Send me one</button><br><br><br><br><br><br><br>
+                <p>Discord Server: <a href="https://discord.gg/wD7YesTvm7">here</a></p>
+            </div> <br><br><br><br><br><br><br><br><br><br>
+        </section>
+    </body>
+
+</html>
